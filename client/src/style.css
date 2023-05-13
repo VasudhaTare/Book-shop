@@ -1,0 +1,84 @@
+.App{
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(104, 123, 167);
+    /* background-image: url("https://img.freepik.com/free-photo/creative-composition-world-book-day_23-2148883765.jpg?size=626&ext=jpg&ga=GA1.2.365912025.1654664158&semt=robertav1_2_sidr"); */
+    /* filter: blur(8px); */
+    overflow-y: auto;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.books{
+    display: flex;
+    gap: 10px;
+    /* filter: blur(-8px); */
+    /* background-color: rgb(178, 183, 211); */
+    overflow-x: auto;
+    flex-wrap: wrap; /*to make content come underneath */
+}
+
+.book{
+    flex: 1;
+    /* to prevent delete and update button irregularity */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: blueviolet;
+}
+
+.delete{
+    border: none;
+    padding: 3px 6px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 2px solid pink;
+    color: brown;
+}
+
+.update{
+    border: none;
+    padding: 3px 6px;
+    background-color: aliceblue;
+    cursor: pointer;
+    border: 2px solid lightgreen;
+    color: green;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border: 2px solid burlywood;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: rgb(173, 151, 102);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-book{
+    text-decoration: none;
+    align-items: center;
+}
